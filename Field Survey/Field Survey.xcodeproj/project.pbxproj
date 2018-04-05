@@ -11,6 +11,14 @@
 		D99A284B207691E40017F516 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99A2849207691E40017F516 /* Main.storyboard */; };
 		D99A284D207691E60017F516 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99A284C207691E60017F516 /* Assets.xcassets */; };
 		D99A2850207691E60017F516 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99A284E207691E60017F516 /* LaunchScreen.storyboard */; };
+		D99A285B207696C30017F516 /* field_observations.json in Resources */ = {isa = PBXBuildFile; fileRef = D99A285A207696C30017F516 /* field_observations.json */; };
+		D99A285D2076980D0017F516 /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99A285C2076980D0017F516 /* Classification.swift */; };
+		D99A285F20769B8E0017F516 /* ClassificationAnimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99A285E20769B8E0017F516 /* ClassificationAnimal.swift */; };
+		D99A28612076A0B50017F516 /* ClassificationAnimalJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99A28602076A0B50017F516 /* ClassificationAnimalJSONParser.swift */; };
+		D99A28632076A8CA0017F516 /* ClassificationAnimalJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99A28622076A8CA0017F516 /* ClassificationAnimalJSONLoader.swift */; };
+		D99A28652076B2060017F516 /* ClassificationAnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99A28642076B2060017F516 /* ClassificationAnimalsViewController.swift */; };
+		D99A28672076B2380017F516 /* ObservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99A28662076B2380017F516 /* ObservationViewController.swift */; };
+		D99A28692076B80E0017F516 /* ObservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99A28682076B80E0017F516 /* ObservationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		D99A284C207691E60017F516 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D99A284F207691E60017F516 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D99A2851207691E60017F516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D99A285A207696C30017F516 /* field_observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = field_observations.json; sourceTree = "<group>"; };
+		D99A285C2076980D0017F516 /* Classification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
+		D99A285E20769B8E0017F516 /* ClassificationAnimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationAnimal.swift; sourceTree = "<group>"; };
+		D99A28602076A0B50017F516 /* ClassificationAnimalJSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationAnimalJSONParser.swift; sourceTree = "<group>"; };
+		D99A28622076A8CA0017F516 /* ClassificationAnimalJSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationAnimalJSONLoader.swift; sourceTree = "<group>"; };
+		D99A28642076B2060017F516 /* ClassificationAnimalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationAnimalsViewController.swift; sourceTree = "<group>"; };
+		D99A28662076B2380017F516 /* ObservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationViewController.swift; sourceTree = "<group>"; };
+		D99A28682076B80E0017F516 /* ObservationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +68,29 @@
 		D99A2844207691E40017F516 /* Field Survey */ = {
 			isa = PBXGroup;
 			children = (
+				D99A2857207695FD0017F516 /* Model */,
 				D99A2845207691E40017F516 /* AppDelegate.swift */,
 				D99A2849207691E40017F516 /* Main.storyboard */,
 				D99A284C207691E60017F516 /* Assets.xcassets */,
 				D99A284E207691E60017F516 /* LaunchScreen.storyboard */,
 				D99A2851207691E60017F516 /* Info.plist */,
+				D99A28642076B2060017F516 /* ClassificationAnimalsViewController.swift */,
+				D99A28662076B2380017F516 /* ObservationViewController.swift */,
+				D99A28682076B80E0017F516 /* ObservationTableViewCell.swift */,
 			);
 			path = "Field Survey";
+			sourceTree = "<group>";
+		};
+		D99A2857207695FD0017F516 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D99A285A207696C30017F516 /* field_observations.json */,
+				D99A285C2076980D0017F516 /* Classification.swift */,
+				D99A285E20769B8E0017F516 /* ClassificationAnimal.swift */,
+				D99A28602076A0B50017F516 /* ClassificationAnimalJSONParser.swift */,
+				D99A28622076A8CA0017F516 /* ClassificationAnimalJSONLoader.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D99A2850207691E60017F516 /* LaunchScreen.storyboard in Resources */,
+				D99A285B207696C30017F516 /* field_observations.json in Resources */,
 				D99A284D207691E60017F516 /* Assets.xcassets in Resources */,
 				D99A284B207691E40017F516 /* Main.storyboard in Resources */,
 			);
@@ -132,6 +165,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D99A28692076B80E0017F516 /* ObservationTableViewCell.swift in Sources */,
+				D99A28672076B2380017F516 /* ObservationViewController.swift in Sources */,
+				D99A28612076A0B50017F516 /* ClassificationAnimalJSONParser.swift in Sources */,
+				D99A285D2076980D0017F516 /* Classification.swift in Sources */,
+				D99A28652076B2060017F516 /* ClassificationAnimalsViewController.swift in Sources */,
+				D99A285F20769B8E0017F516 /* ClassificationAnimal.swift in Sources */,
+				D99A28632076A8CA0017F516 /* ClassificationAnimalJSONLoader.swift in Sources */,
 				D99A2846207691E40017F516 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
